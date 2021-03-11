@@ -41,10 +41,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
 ]
-CORS_ALLOWED_ORIGINS = [
-    "https://cotizadorfront.logisticatotal.com",
-    "http://localhost:4200"
-]
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'EnviosfyBack.urls'
 
