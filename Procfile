@@ -1,0 +1,1 @@
+web: gunicorn EnviosfyBack.wsgi --log-file -
