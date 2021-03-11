@@ -42,7 +42,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 CORS_ALLOWED_ORIGINS = [
-    "https://enviosfy.web.app",
+    "https://cotizadorfront.logisticatotal.com",
     "http://localhost:4200"
 ]
 
