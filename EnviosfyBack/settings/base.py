@@ -9,7 +9,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '(q_ql=td(1^0i2b*snup4k1%l)sb5w!*+(+9s#cv_4!+9d6fkj'
-
+ALLOWED_HOSTS=['*']
+CORS_ORIGIN_WHITELIST = [
+    "https://cotizadorfront.logisticatotal.com/",
+    "http://localhost:4200"
+]
 # Application definition
 
 BASE_APPS = [
@@ -32,7 +36,6 @@ THIRD_APPS = [
 
 INSTALLED_APPS = BASE_APPS + LOCAL_APPS + THIRD_APPS
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -40,8 +43,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
-CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'EnviosfyBack.urls'
 
@@ -62,8 +65,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'EnviosfyBack.wsgi.application'
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

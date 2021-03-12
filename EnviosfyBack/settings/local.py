@@ -3,7 +3,6 @@ import os
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
 # Email configurations
 EMAIL_USE_SSL = True
 EMAIL_HOST = os.environ.get('EMAIL_HOST')
