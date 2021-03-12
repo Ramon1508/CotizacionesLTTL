@@ -41,6 +41,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+ALLOWED_HOSTS = ['*']
 CORS_ALLOWED_ORIGINS = [
     "https://cotizadorfront.logisticatotal.com",
     "http://localhost:4200"
