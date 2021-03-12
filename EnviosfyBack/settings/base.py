@@ -41,10 +41,11 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['cotizadorfront.logisticatotal.com', 'cotizacioneslttl.herokuapp.com','http://localhost:4200']
 CORS_ALLOWED_ORIGINS = [
-    "https://cotizadorfront.logisticatotal.com",
-    "http://localhost:4200"
+    'https://cotizadorfront.logisticatotal.com',
+    'https://cotizacioneslttl.herokuapp.com',
+    'http://localhost:4200'
 ]
 CORS_ALLOW_METHODS = [
     'GET',
